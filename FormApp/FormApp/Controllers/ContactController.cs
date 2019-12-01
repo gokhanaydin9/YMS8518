@@ -16,6 +16,7 @@ namespace FormApp.Controllers
             {
                 return BadRequest(error:"Hayırdır?");
             }
+       
             return new JsonResult(contactSendDto);
         }
     }
