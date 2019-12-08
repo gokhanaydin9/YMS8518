@@ -1,0 +1,11 @@
+static void Main(string[] args)
+        {
+            int[] dizi = { 4, 2, 30, 4, 5 };           
+
+            Array.Sort(dizi);            
+
+            Console.WriteLine(dizi[dizi.Length - 1]);
+            
+            Console.ReadLine();
+         
+        }

@@ -1,0 +1,7 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Kelime:");
+            Console.WriteLine(Console.ReadLine().Length);
+            Console.ReadLine();
+
+        }

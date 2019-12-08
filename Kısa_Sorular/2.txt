@@ -1,0 +1,19 @@
+ static void Main(string[] args)
+        {
+            Console.WriteLine("Kelime girin:");
+            string kelime = Console.ReadLine();            
+            char[] arr = kelime.ToCharArray();
+            
+            Array.Reverse(arr);
+            string kelime2 = new string(arr);
+
+            if (string.Equals(kelime.ToLower(), kelime2.ToLower()))
+            {
+                Console.WriteLine("Palindrome");
+            }
+            else
+            {
+                Console.WriteLine("Palindrome Deðil");
+            }
+            Console.ReadLine();
+        }

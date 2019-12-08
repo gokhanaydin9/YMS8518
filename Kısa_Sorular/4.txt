@@ -1,0 +1,14 @@
+static void Main(string[] args)
+        {
+            int[] dizi = { 1, 2, 3, 4, 5 };
+            int toplam = 0;
+
+            foreach(int counter in dizi){
+                toplam +=counter;
+
+            }
+
+            Console.WriteLine(toplam);
+            Console.ReadLine();
+         
+        }

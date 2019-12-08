@@ -1,0 +1,12 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Kelime girin:");
+            string kelime = Console.ReadLine();            
+            char[] arr = kelime.ToCharArray();
+            
+            Array.Reverse(arr);
+            kelime = new string(arr);
+
+            Console.WriteLine(kelime);
+            Console.ReadLine();
+        }

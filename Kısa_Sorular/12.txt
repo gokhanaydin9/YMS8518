@@ -1,0 +1,19 @@
+static void Main(string[] args)
+        {
+            int tek = 0;
+            int cift = 0;
+
+            for(int counter = 1; counter <= 1000; counter++)
+            {
+                if (counter % 2 == 0)
+                    tek++;
+                else
+                    cift++;
+            }
+
+            Console.WriteLine("Çift:" + cift);
+            Console.WriteLine("Tek:" + tek);
+
+            Console.ReadLine();
+         
+        }

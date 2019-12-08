@@ -1,0 +1,13 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Cümle:");
+            string s = Console.ReadLine();
+
+            char[] delimiterChars = {' '};
+            string[] sayilar = s.Split(delimiterChars);
+
+            Console.WriteLine(sayilar.Length);
+
+            Console.ReadLine();
+
+        }

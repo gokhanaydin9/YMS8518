@@ -1,0 +1,49 @@
+static void Main(string[] args)
+        {
+            int tek=0;
+            int cift=0;
+            int[] main_array = {1,2,3,10,20,30,5,8,910,100 };
+            int[] even_array;
+            int[] odd_array;
+
+            foreach(int eleman in main_array)
+            {
+                if (eleman % 2 == 0)
+                    cift++;
+                else
+                    tek++;              
+            }
+
+            even_array = new int[cift];
+            odd_array = new int[tek];
+
+            int counter2 = 0;
+            int counter3 = 0;
+
+            for(int counter = 0; counter < main_array.Length; counter++)
+            {
+                if (main_array[counter] % 2 == 0)
+                {
+                    even_array[counter2] = main_array[counter];
+                    counter2++;
+                }
+                else
+                {
+                    odd_array[counter3] = main_array[counter];
+                    counter3++;
+                }
+            }
+
+            foreach (int element in even_array)
+                Console.WriteLine(element);
+
+            Console.WriteLine();
+
+            foreach (int element in odd_array)
+                Console.WriteLine(element);
+
+
+            Console.ReadLine();
+
+
+        }

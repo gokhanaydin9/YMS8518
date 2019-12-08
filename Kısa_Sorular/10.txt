@@ -1,0 +1,16 @@
+static void Main(string[] args)
+        {
+            try
+            {
+                Console.Write("Bir sayý giriniz:");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Integer");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Integer Deðil");
+            }
+
+            Console.ReadLine();
+         
+        }

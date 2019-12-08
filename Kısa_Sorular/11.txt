@@ -1,0 +1,10 @@
+ static void Main(string[] args)
+        {
+            if (Convert.ToInt32(Console.ReadLine()) % 2 == 0)
+                Console.WriteLine("Çift");
+            else
+                Console.WriteLine("Tek");
+
+            Console.ReadLine();
+         
+        }

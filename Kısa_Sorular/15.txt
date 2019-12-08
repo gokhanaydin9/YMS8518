@@ -1,0 +1,24 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Kelime:");
+            int count;
+            string s = Console.ReadLine();
+            char[] arr = s.ToCharArray();
+            List<string> l = new List<string>();
+
+            for (int counter = 0; counter < s.Length; counter++)
+            {
+                count = s.Count(f => f == arr[counter]);
+                l.Add(arr[counter] + " " + count);                
+            }
+
+            List<string> distinct = l.Distinct().ToList();
+
+            distinct.Sort();        
+
+            foreach (string eleman in distinct)
+                Console.WriteLine(eleman);
+            
+            Console.ReadLine();
+
+        }

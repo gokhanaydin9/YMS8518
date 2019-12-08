@@ -1,0 +1,16 @@
+static void Main(string[] args)
+        {
+            int[] array = { 1, -5, 10, 100, -12, 1, 2, 3, 4, 5 };
+
+            foreach(int number in array)
+            {
+                if (number > 0)
+                    Console.WriteLine("Pozitif-->"+number);
+                else
+                    Console.WriteLine("Negatif-->"+number);
+
+            }
+
+            Console.ReadLine();            
+         
+        }

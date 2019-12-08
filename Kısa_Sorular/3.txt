@@ -1,0 +1,11 @@
+static void Main(string[] args)
+        {
+            Console.Write("Kaça kadar:");
+            int limit = Convert.ToInt32(Console.ReadLine());
+
+            for(int counter = 0; counter <= limit; counter++)
+            {
+                Console.WriteLine(counter);
+            }
+            Console.ReadLine();
+        }

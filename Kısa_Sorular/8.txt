@@ -1,0 +1,13 @@
+static void Main(string[] args)
+        {
+            Console.Write("Sayý:");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            for(int sayac = 0; sayac < sayi; sayac++)
+            {
+                Console.WriteLine("Gökhan Aydýn");
+            }
+
+            Console.ReadLine();
+         
+        }

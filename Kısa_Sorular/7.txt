@@ -1,0 +1,41 @@
+static void Main(string[] args)
+        {
+            int[] dizi = {1000, 2, 3, 4, 5, 9, 7, 8, 100, 1};
+            int[] farklar = new int[10];
+            int[] sirali_farklar = new int[10];
+            int toplam = 0;
+
+            foreach(int counter in dizi)
+            {
+                toplam = toplam + counter;
+            }
+
+            int ortalama = toplam / 10;
+
+            for(int counter2 = 0; counter2 <=9; counter2++)
+            {
+                farklar[counter2] = Math.Abs(ortalama - dizi[counter2]);
+                sirali_farklar[counter2] = Math.Abs(ortalama - dizi[counter2]);
+                //Console.WriteLine(farklar[counter2]);                
+            }
+
+            Array.Sort(sirali_farklar);
+            int minimum = sirali_farklar[0];
+            Console.WriteLine();
+            Console.WriteLine();
+            //Console.WriteLine(minimum);
+
+
+            int counter3;
+
+            for(counter3=0; counter3 <=9; counter3++)
+            {
+                if (farklar[counter3] == minimum)                
+                    break;                
+            }
+
+            Console.WriteLine(dizi[counter3]);   
+                       
+            Console.ReadLine();
+         
+        }
