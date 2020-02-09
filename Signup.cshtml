@@ -1,0 +1,32 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function myFunction() {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        var data = {
+            Username: username,
+            Password: password
+        };
+        var json = JSON.stringify(data);
+        $.ajax({
+            type: "POST",
+            url: "/Home/SaveUser",
+            data: json,
+            success: Send_Callback,
+            error: Send_Callback_Error,
+            dataType: "json",
+            contentType: "application/json ; charset = utf-8"
+        });
+    }
+    function Send_Callback() {
+        alert("Kullanıcı kaydedildi!");
+    }
+    function Send_Callback_Error() {
+    }
+</script>
+
+<div>
+    <input type="text" id="username" placeholder="Username" /><br />
+    <input type="text" id="password" placeholder="Password" /><br />
+    <input type="button" value="Kaydol" onclick="myFunction()" />
+</div>
