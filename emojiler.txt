@@ -1,0 +1,18 @@
+    message = "<li>" + user + ":" + message + "</li>";
+    document.getElementById("messagesList").innerHTML = document.getElementById("messagesList").innerHTML + message;
+
+    var res = document.getElementById("messagesList").innerHTML;
+    res = res.replace(/:\)/g, "<img src='/img/icon_smile.png' style='height:30px;'/>");
+    res = res.replace(/:\(/g, "<img src='/img/uzgun.png' style='height:30px;'/>");
+    res = res.replace(/;\)/g, "<img src='/img/blink.png' style='height:30px;'/>");
+    res = res.replace(/&lt;3/g, "<img src='/img/heart.png' style='height:30px;'/>");
+    res = res.replace(/:p/g, "<img src='/img/tongue.png' style='height:30px;'/>");
+    res = res.replace(/:\'\(/g, "<img src='/img/cry.png' style='height:30px;'/>");
+    res = res.replace(/:d/g, "<img src='/img/laugh.png' style='height:30px;'/>");
+    res = res.replace(/:c/g, "<img src='/img/cat.png' style='height:30px;'/>");
+    res = res.replace(/:s/g, "<img src='/img/shit.png' style='height:30px;'/>");
+    res = res.replace(/:v/g, "<img src='/img/whisky.png' style='height:30px;'/>");
+
+    document.getElementById("messagesList").innerHTML = res;
+
+    document.getElementById("messagesList").innerHTML = document.getElementById("messagesList").innerHTML + new Date().getHours() +":"+new Date().getMinutes() +":"+ new Date().getSeconds(); 
